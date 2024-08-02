@@ -17,14 +17,14 @@ function App() {
         <Route element={<AppLayout />}>
           <Route path="home" element={<Home />} />
           <Route index element={<Navigate replace to="home" />} />
-          <Route path="shop" element={<Shop />} />
-          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="shop" element={<Shop />} />
           <Route path="blog" element={<Blog />} />
           <Route path="cart" element={<Cart />} />
         </Route>
-        <Route path="*" element={<PageNotFound />} />
         <Route path="login" element={<LoginForm />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
