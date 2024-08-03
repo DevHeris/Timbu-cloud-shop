@@ -1,8 +1,10 @@
-import PageNav from "./PageNav";
+import PageNav from './PageNav';
 
 function Header() {
   return (
-   <header className='bg-slate-200 px-4 py-3 sm:px-8 sm:py-5'><PageNav/></header>
+    <header className="bg-slate-200 px-5 py-4 sm:px-10 sm:py-6 md:px-16">
+      <PageNav />
+    </header>
   );
 }
 
