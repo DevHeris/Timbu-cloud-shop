@@ -96,16 +96,16 @@ function PageNav() {
       {/* Top Navigation Bar */}
       <ul>
         {/* Main Navigation Content */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <div>
             <li>
               <Logo />
             </li>
           </div>
 
-          <div className="flex gap-7">
+          <div className="flex sm:gap-3 md:gap-7">
             {/* Navigation Links for Desktop */}
-            <li className="hidden md:block">
+            <li className="hidden sm:block">
               <NavLink
                 to="home"
                 className={({ isActive }) =>
@@ -115,7 +115,7 @@ function PageNav() {
                 Home
               </NavLink>
             </li>
-            <li className="hidden md:block">
+            <li className="hidden sm:block">
               <NavLink
                 to="shop"
                 className={({ isActive }) =>
@@ -125,17 +125,17 @@ function PageNav() {
                 Shop
               </NavLink>
             </li>
-            <li className="hidden md:block">
+            <li className="hidden sm:block">
               <NavLink
                 to="about"
                 className={({ isActive }) =>
                   `py-2 ${isActive && 'text-orange-500'}`
                 }
               >
-                About Us
+                About
               </NavLink>
             </li>
-            <li className="hidden md:block">
+            <li className="hidden sm:block">
               <NavLink
                 to="blog"
                 className={({ isActive }) =>
@@ -145,14 +145,14 @@ function PageNav() {
                 Blog
               </NavLink>
             </li>
-            <li className="hidden md:block">
+            <li className="hidden sm:block">
               <NavLink
                 to="contact"
                 className={({ isActive }) =>
                   `py-2 ${isActive && 'text-orange-500'}`
                 }
               >
-                Contact Us
+                Contact
               </NavLink>
             </li>
           </div>

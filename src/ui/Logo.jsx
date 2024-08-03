@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-function Logo() {
+function Logo({ type = 'dark' }) {
   return (
     <Link to="/">
-      <img src="assets/dwky-logo.svg" alt="dwky logo" />
+      <img src={`assets/dwky-logo-${type}.svg`} alt="dwky logo" />
     </Link>
   );
 }
