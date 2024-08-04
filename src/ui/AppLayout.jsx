@@ -7,7 +7,7 @@ function AppLayout() {
   return (
     <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       <Header />
-      <main className="bg-indigo-50">
+      <main className="bg-white">
         <Outlet />
       </main>
       <Footer />
